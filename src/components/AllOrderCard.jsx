@@ -1,7 +1,7 @@
 import { Orders } from "./Orders"
 
 export const AllOrderCard = () => {
-    return <div className="bg-white rounded-md  p-2 overflow-auto">
+    return <div className="bg-white rounded-md  p-2 ">
                 <div className=" flex justify-between ">
                     <div className="p-4">
                         <form class="max-w-md mx-auto">   
@@ -49,7 +49,7 @@ export const AllOrderCard = () => {
                     </div>
             </div>
 
-            <div>
+            <div className="overflow-x-scroll overflow-y-scroll h-[300px] w-[600px] md:h-auto md:max-h-[500px] md:w-auto">
                         <div className="grid grid-cols-5 bg-gray-100 rounded-md p-3 font-medium">
 
                             <div>
