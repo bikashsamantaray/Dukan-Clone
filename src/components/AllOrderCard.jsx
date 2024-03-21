@@ -48,38 +48,50 @@ export const AllOrderCard = () => {
                     
                     </div>
             </div>
+ 
+            <div className=" overflow-x-auto">
+                        <table className="table-auto min-w-full">
+                            <colgroup>
+                                <col className="w-1/5"/>
+                                <col className="w-1/5"/>
+                                <col className="w-1/5"/>
+                                <col className="w-1/5"/>
+                                <col className="w-1/5"/>
+                            </colgroup>
+                            <thead>
+                                <tr className="bg-gray-100 rounded-md p-3 h-10">
+                                    <th className="font-medium">Order ID</th>
+                               
+                              
+                                    <th className="font-medium">Status</th>
+                            
+                            
+                                    <th className="font-medium">Transaction Id</th>
+                              
+                              
+                                    <th className="font-medium">Refund Date</th>
+                              
+                                
+                                    <th className="font-medium">Order Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                
+                                <Orders  orderid={"#281209"} statusOfOrder={"🟢Successful"} transactionId={"TRX123456"} refundDate={"Today, 8:45 PM"} orderAmount={"1125.00"}/>
+                                <Orders orderid={"#281210"} statusOfOrder={"⚪Processing"} transactionId={"TRX789012"} refundDate={"Tomorrow, 10:00 AM"} orderAmount={"950.00"}/>
+                                <Orders orderid={"#281211"} statusOfOrder={"🟢Successful"} transactionId={"TRX345678"} refundDate={"Yesterday, 3:30 PM"} orderAmount={"750.00"}/>
+                                <Orders orderid={"#281212"} statusOfOrder={"🟢Successful"} transactionId={"TRX901234"} refundDate={"Today, 11:20 AM"} orderAmount={"546.66"}/>
+                                <Orders orderid={"#281213"} statusOfOrder={"⚪Processing"} transactionId={"TRX567890"} refundDate={"Tomorrow, 9:00 AM"} orderAmount={"200.00"}/>
+                                <Orders orderid={"#281214"} statusOfOrder={"⚪Processing"} transactionId={"TRX098765"} refundDate={"Yesterday, 2:00 PM"} orderAmount={"125.00"}/>
+                                <Orders orderid={"#281215"} statusOfOrder={"🟢Successful"} transactionId={"TRX456789"} refundDate={"Today, 10:30 AM"} orderAmount={"234.02"}/>
+                                <Orders orderid={"#281216"} statusOfOrder={"⚪Processing"} transactionId={"TRX987654"} refundDate={"Tomorrow, 11:30 AM"} orderAmount={"115.03"}/>
+                                    
+                            </tbody>
 
-            <div className="overflow-x-scroll overflow-y-scroll h-[300px] w-[600px] md:h-auto md:max-h-[500px] md:w-auto">
-                        <div className="grid grid-cols-5 bg-gray-100 rounded-md p-3 font-medium">
 
-                            <div>
-                                Order ID
-                            </div>
-                            <div>
-                                Status
-                            </div>
-                            <div>
-                                Transaction ID
-                            </div>
-                            <div>
-                                Refund Date
-                            </div>
-                            <div className="text-right">
-                                Order Amount
-                            </div>
-
-                    </div>
-                    <div>
-                        <Orders orderid={"#281209"} statusOfOrder={"🟢Successful"} transactionId={"TRX123456"} refundDate={"Today, 8:45 PM"} orderAmount={"1125.00"}/>
-                        <Orders orderid={"#281210"} statusOfOrder={"⚪Processing"} transactionId={"TRX789012"} refundDate={"Tomorrow, 10:00 AM"} orderAmount={"950.00"}/>
-                        <Orders orderid={"#281211"} statusOfOrder={"🟢Successful"} transactionId={"TRX345678"} refundDate={"Yesterday, 3:30 PM"} orderAmount={"750.00"}/>
-                        <Orders orderid={"#281212"} statusOfOrder={"🟢Successful"} transactionId={"TRX901234"} refundDate={"Today, 11:20 AM"} orderAmount={"546.66"}/>
-                        <Orders orderid={"#281213"} statusOfOrder={"⚪Processing"} transactionId={"TRX567890"} refundDate={"Tomorrow, 9:00 AM"} orderAmount={"200.00"}/>
-                        <Orders orderid={"#281214"} statusOfOrder={"⚪Processing"} transactionId={"TRX098765"} refundDate={"Yesterday, 2:00 PM"} orderAmount={"125.00"}/>
-                        <Orders orderid={"#281215"} statusOfOrder={"🟢Successful"} transactionId={"TRX456789"} refundDate={"Today, 10:30 AM"} orderAmount={"234.02"}/>
-                        <Orders orderid={"#281216"} statusOfOrder={"⚪Processing"} transactionId={"TRX987654"} refundDate={"Tomorrow, 11:30 AM"} orderAmount={"115.03"}/>
-                       
-                    </div>
+                            
+                        </table>
             </div>
     </div>
 }
